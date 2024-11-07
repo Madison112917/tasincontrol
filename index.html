@@ -1,29 +1,462 @@
+
+ <?php
+//Development By Sajib hasan
+$filename = 'counter.txt';
+
+if (file_exists($filename)) {
+    if (unlink($filename)) {
+        // File has been deleted successfully
+    } else {
+        // Error deleting the file
+    }
+} else {
+    // File does  exist
+}
+?>
+	 <?php
+if (isset($_POST['deleteFiles'])) {
+    // File paths to be deleted
+    $file1 = '24hours.txt';
+    $file65 = '24hoursold.txt';
+
+    // Check if files exist before attempting to delete
+    if (file_exists($file65) ) {
+        // Delete files
+        unlink($file65);}
+    if (file_exists($file1) ) {
+        // Delete files
+        unlink($file1);
+        echo "Bot Ip Change User Release Successful";
+    } else {
+        echo "User Already Released";
+    }
+}
+?>
+	 		<?php
+if (isset($_POST['deleteFiles1'])) {
+    // File paths to be deleted
+    $file1 = '24hours1.txt';
+
+    // Check if files exist before attempting to delete
+    if (file_exists($file1) ) {
+        // Delete files
+        unlink($file1);
+        echo "Page Ip User Release Successful";
+    } else {
+        echo "User Already Released";
+    }
+}
+?>
 <!DOCTYPE html>
-<html>
-<head>
-        <meta charset="utf-8">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozdeQQY3of_DxYyHb9a4JvsS5FIIvmNUu0g&usqp=CAU">
 
     <title>USA Survey By Tasin Bot Control</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
 
-        iframe {
-            border: none;
-            width: 100%;
-            height: 100%;
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/hover.zoom.js"></script>
+    <script src="js/hover.zoom.conf.js"></script>
+
+    
+  </head>
+
+  <body>
+ <?php
+    
+
+    // Check if form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve selected type from form
+        $selectedType = $_POST['mySelect23'];
+
+        // Combine selected type to create a filename
+        $fileName = "{$selectedType}";
+
+        // Open or create the file based on the selected type
+        $file = fopen($fileName, "w");
+
+        // Write the new messages to the file, each on a new line
+        fwrite($file, $_POST['messages'] . PHP_EOL);
+
+        // Close the file
+        fclose($file);
+
+        // Set success message
+        echo "Usa";
+
+// Flush the output buffer to ensure the message is sent to the browser
+ // Ensure that no further code is executed after the redirect
+ // Ensure that no further code is executed after the redirect
+}
+?>           
+ <?php
+    
+
+    // Check if form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve selected type from form
+        $selectedType = $_POST['baul'];
+
+        // Combine selected type to create a filename
+        $fileName = "{$selectedType}";
+
+        // Open or create the file based on the selected type
+        $file = fopen($fileName, "w");
+
+        // Write the new messages to the file, each on a new line
+        fwrite($file, $_POST['messages'] . PHP_EOL);
+
+        // Close the file
+        fclose($file);
+
+        // Set success message
+        echo "BOSS";
+
+// Flush the output buffer to ensure the message is sent to the browser
+ // Ensure that no further code is executed after the redirect
+ // Ensure that no further code is executed after the redirect
+}
+?>
+    <?php
+    
+
+    // Check if form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve selected type from form
+        $selectedType = $_POST['mySelect1'];
+
+        // Combine selected type to create a filename
+        $fileName = "{$selectedType}";
+
+        // Open or create the file based on the selected type
+        $file = fopen($fileName, "w");
+
+        // Write the new messages to the file, each on a new line
+        fwrite($file, $_POST['messages'] . PHP_EOL);
+
+        // Close the file
+        fclose($file);
+
+        // Set success message
+        echo 'Survey';
+    }
+    ?>	 
+    <?php
+    
+
+    // Check if form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve selected type from form
+        $selectedType = $_POST['mySelect2'];
+
+        // Combine selected type to create a filename
+        $fileName = "{$selectedType}";
+
+        // Open or create the file based on the selected type
+        $file = fopen($fileName, "w");
+
+        // Write the new messages to the file, each on a new line
+        fwrite($file, $_POST['messages'] . PHP_EOL);
+
+        // Close the file
+        fclose($file);
+
+        // Set success message
+        echo ' by';
+    }
+    ?>	 
+    <?php
+    
+
+    // Check if form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve selected type from form
+        $selectedType = $_POST['mySelect3'];
+
+        // Combine selected type to create a filename
+        $fileName = "{$selectedType}";
+
+        // Open or create the file based on the selected type
+        $file = fopen($fileName, "w");
+
+        // Write the new messages to the file, each on a new line
+        fwrite($file, $_POST['messages'] . PHP_EOL);
+
+        // Close the file
+        fclose($file);
+
+        // Set success message
+        echo 'Tasin';
+    }
+    ?>	
+    
+
+
+
+
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="https://google.com">Survey Bot Controller</a>
+        </div>
+       
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+       <script src="  js/bootstrap.min.js"></script>
+			
+	<div class="container" style="margin-top:100px;">
+			
+				<div class="row">
+					<div class="col-md-6">
+					  <div class="form-group">
+
+
+					  </div>
+					  					  <div class="form-group">	
+	<form action="" method="post">
+        <button type="submit" name="deleteFiles" class="btn btn-success btn-block"><font color="red">Bot ip User Released</font></button>
+            </form><br> 
+            	<form action="" method="post">
+        <button type="submit" name="deleteFiles1" class="btn btn-success btn-block"><font color="red">Page Ip User Released</font></button>
+            </form>
+        
+        <br><br><br><br>
+        <button onclick="refreshPage()"class="btn btn-success btn-block">Refresh Page</button><br>
+<button onclick="openLink()" class="btn btn-success btn-block">Notice</button><br>
+
+<script>
+    function openLink() {
+        // Specify the URL you want to open
+        var url = "/notice.php"; // Replace this with your desired URL
+        
+        // Open the URL in the current tab/window
+        window.location.href = url;
+    }
+</script>
+    <script>
+        // JavaScript function to refresh the page
+        function refreshPage() {
+            location.reload(true); // Set to true to force a full page reload
         }
-    </style>
-</head>
-<body>
-    <iframe src="http://ideawhat.xyz/adminbot.php" frameborder="0" allowfullscreen></iframe>
-</body>
-</html>
+    </script>
+
+		
+		<form method="post" action="">
+	  
+		
+                <br>  
+						<label for="type">Select User File:</label>
+        <select id="mySelect23" name="mySelect23" onchange="loadTextFile23()">
+    <option value="tasin.txt"> Select Please</option>
+    <option value="allowed.txt">User Allowed List</option> 
+    <option value="botipuserfile.txt">Bot ip Allowed List</option>
+     <option value="user3.txt">Total Bot Ip User</option> 
+     <option value="bauluser.txt">Baul User</option> 
+     <option value="Profile.txt">Profile details</option> 
+     </select><br>  
+     <label for="type">Select Others All ip:</label>
+    <select id="mySelect1" name="mySelect1" onchange="loadTextFile1()">
+    <option value="tasin.txt" > Select Please</option>
+    <option value="pageip.txt">Page Ip</option>
+    <option value="oldip.txt">Old Bot ip</option>
+    <option value="accountip.txt">Account Create Ip</option> 
+    <option value="atbotip.txt">AT&T Bot Ip</option> 
+     <option value="ukip.txt">UK Bot Ip</option> 
+     <option value="canada.txt">Canada Bot Ip</option> 
+     <option value="australia.txt">Canada Bot Ip</option> 
+     <option value="germany.txt">Germany Bot Ip</option>
+     </select><br> 
+     <label for="type">Select T Mobile Bot Ip:</label>
+        <select id="mySelect2" name="mySelect2" onchange="loadTextFile2()">
+    <option value="tasin.txt" > Select Please</option>
+    <option value="CALIFORNIA.txt">CALIFORNIA</option>
+    <option value="TEXAS.txt">TEXAS</option>
+    <option value="COLORADO.txt">COLORADO</option>
+    <option value="NewYork.txt">New York</option>
+     <option value="NewJersey.txt">New Jersey</option>  
+     </select><br> 
+     <label for="type">Select Verizon Bot Ip:</label>
+        <select id="mySelect3" name="mySelect3" onchange="loadTextFile3()">
+    <option value="tasin.txt" > Select Please</option>
+    <option value="CALIFORNIAV.txt">CALIFORNIA</option>
+    <option value="TEXASV.txt">TEXAS</option>
+    <option value="GEORGIAV.txt">GEORGIA</option>
+    <option value="NewYorkV.txt">New York</option>
+     <option value="FLORIDAV.txt">FLORIDA</option>  
+     </select> <br><br> 
+    
+      
+        
+         
+         </div>
+					  <div class="form-group">
+   
+						
+					  <div class="form-group">
+						<label for="ToEmails">List</label>
+						 <textarea name="messages" id="messages" class="form-control"  placeholder="" style="height: 500px; width: 100%; "></textarea>
+					  </div>
+					</div><br>
+				
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 text-center">
+					<input type="submit" value="Save Data" class="btn btn-success btn-block" ><br>
+    </form>
+
+
+
+    
+
+						</div>
+						<div class="col-5 text-left">
+						 
+
+					</div> 
+				</div>
+				</div><br><br><br>
+<style>
+di {
+  background-color: lightgrey;
+  width: 1000px;
+  border: 10px solid green;
+  padding: 30px;
+  margin: 210px;
+}
+</style>
+    <p><font style="font-weight: bold; size="3">Total Line: <span id="lineCount">0</span></p></font>
+<dialog open>
+ 
+<div2 id="multi-responce" > <font style="font-weight: bold; size="3">
+Usa Survey By Tasin Bot Controller
+ 
+ </font>
+</div2>
+			</form>	</dialog><br><br><br><br><br><br>
+ 
+			<br><br><br>
+ 
+ <script>
+function loadTextFile400() {
+    var selectedFile = document.getElementById("request").value;
+
+    // Using AJAX to fetch the content of the selected text file
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("messages").value = xhr.responseText;
+        }
+    };
+    xhr.open("GET", "load_file1.php?file=" + selectedFile, true);
+    xhr.send();
+} 
+</script> 			
+<script>
+function loadTextFile23() {
+    var selectedFile = document.getElementById("mySelect23").value;
+
+    // Using AJAX to fetch the content of the selected text file
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("messages").value = xhr.responseText;
+        }
+    };
+    xhr.open("GET", "load_file1.php?file=" + selectedFile, true);
+    xhr.send();
+} 
+</script> 
+<script>
+function loadTextFile1() {
+    var selectedFile = document.getElementById("mySelect1").value;
+
+    // Using AJAX to fetch the content of the selected text file
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("messages").value = xhr.responseText;
+        }
+    };
+    xhr.open("GET", "load_file.php?file=" + selectedFile, true);
+    xhr.send();
+}
+</script> 
+<script>
+function loadTextFile2() {
+    var selectedFile = document.getElementById("mySelect2").value;
+
+    // Using AJAX to fetch the content of the selected text file
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("messages").value = xhr.responseText;
+        }
+    };
+    xhr.open("GET", "load_file.php?file=" + selectedFile, true);
+    xhr.send();
+}
+</script> 
+<script>
+function loadTextFile3() {
+    var selectedFile = document.getElementById("mySelect3").value;
+
+    // Using AJAX to fetch the content of the selected text file
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("messages").value = xhr.responseText;
+        }
+    };
+    xhr.open("GET", "load_file.php?file=" + selectedFile, true);
+    xhr.send();
+}
+</script> 
+<script>
+function baul1() {
+    var selectedFile = document.getElementById("baul").value;
+
+    // Using AJAX to fetch the content of the selected text file
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("messages").value = xhr.responseText;
+        }
+    };
+    xhr.open("GET", "load_file.php?file=" + selectedFile, true);
+    xhr.send();
+}
+</script>
+  <script>
+        const textArea = document.getElementById('messages');
+        const lineCountElement = document.getElementById('lineCount');
+
+        textArea.addEventListener('input', () => {
+            const text = textArea.value;
+            const lines = text.split('\n');
+            const lineCount = lines.length;
+
+            lineCountElement.innerText = lineCount;
+        });
+    </script>
+    
+
+  
+        </html>
+                
